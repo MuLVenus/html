@@ -9,17 +9,18 @@
 </head>
 <body>
     <header>
-        <div><img src="main.jpg" alt=""></div>
+        <img src="main.jpg" alt="">
         <div>
             <h1>지금도 그렇고 미래도 소프트웨어 세상입니다!</h1>
             <p>4차 산업혁명을 선도할 소프트웨어 개발 인재를 양성합니다.</p>
         </div>
     </header>
     <nav>
-        <a href="introduction.html">학교 소개</a> | 
-        <a href="history.html">학과 연혁</a> | 
-        <a href="join.html">회원 가입</a>
-            
+        <ul>
+            <li><a href="introduction.html">학교 소개</a> </li> | 
+            <li><a href="history.html">학과 연혁</a></li> | 
+            <li><a href="join.html">회원 가입</a></li>
+        </ul>
     </nav>
     <section>
         <h2>회원가입</h2>
@@ -73,7 +74,35 @@
     </footer>
 
     <style>
-
+        section article
+        {
+            width: 80%;
+            margin: auto;
+        }
+        ul
+        {
+            list-style-type: none;
+        }
+        li
+        {
+            padding: 5px;
+        }
+        div
+        {
+            text-align: center;
+            margin: 20px;
+        }
+        label
+        {
+            display: inline-block;
+            width: 4em;
+            text-align: left;
+            margin-right: 10px;
+        }
+        li input[type="checkbox"] + input[type="checkbox"]
+        {
+            margin-left: 20px;
+        }
     </style>
 </body>
 </html>

@@ -9,21 +9,23 @@
 </head>
 <body>
     <header>
-        <div><img src="main.jpg" alt=""></div>
+        <img src="main.jpg" alt="">
         <div>
             <h1>지금도 그렇고 미래도 소프트웨어 세상입니다!</h1>
             <p>4차 산업혁명을 선도할 소프트웨어 개발 인재를 양성합니다.</p>
         </div>
     </header>
     <nav>
-        <a href="introduction.html">학교 소개</a> | 
-        <a href="history.html">학과 연혁</a> | 
-        <a href="join.html">회원 가입</a>
+        <ul>
+            <li><a href="introduction.html">학교 소개</a> </li> | 
+            <li><a href="history.html">학과 연혁</a></li> | 
+            <li><a href="join.html">회원 가입</a></li>
+        </ul>
     </nav>
     <section>
         <h2>학과 연혁</h2>
         <article>
-            <table border="1">
+            <table>
                 <tr>
                     <th rowspan="3">2022</th>
                     <td>07월</td>
@@ -70,5 +72,23 @@
     <footer>
         <p>엡제작 202095109 양사호</p>
     </footer>
+    <style>
+        section article table
+        {
+            width: 80%;
+            margin:30px auto 30px auto;
+            border-collapse: collapse;
+        }
+        section article table tr td,th
+        {
+            border-bottom: 1px dotted black;
+            padding: 10px;
+        }
+        section article table tr th
+        {
+            font-size: 1.5em;
+            
+        }
+    </style>
 </body>
 </html>
