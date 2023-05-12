@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10점 시맨틱 대그</title>
+</head>
+<body>
+    <header>
+        <h1>CSS float 승성과 clear 슥성</h1>
+    </header>
+
+    <nav>
+        <a href="#s1">[&lt;hearder&gt;]</a>&nbsp;&nbsp;&nbsp;
+        <a href="#s2">[&lt;nav&gt;]</a>&nbsp;&nbsp;&nbsp;
+        <a href="#s3">[&lt;section&gt;]</a>&nbsp;&nbsp;&nbsp;
+        <a href="#s4">[&lt;article&gt;]</a>&nbsp;&nbsp;&nbsp;
+        <a href="#s5">[&lt;aside&gt;]</a>&nbsp;&nbsp;&nbsp;
+        <a href="#s6">[&lt;footer&gt;]</a>&nbsp;&nbsp;&nbsp;
+    </nav>
+    <!-- header -->
+
+    <section id="s1">
+        <h1>nav</h1>
+        <article>
+            <ul>
+                <li>페이지나 색선의 머리말 표현</li>
+                <ol>
+                    <li>페이지 제목</li>
+                    <li>페이지 소개</li>
+                </ol>
+            </ul>
+        </article>
+    </section>
+
+    <section id="s2">
+        <h1>header</h1>
+        <article>
+            <ol>
+                <li>하이퍼링크들을 모아 놓은 특별한 섹션</li>
+                <li>페이치 내 목치를 만드는 옹도</li>
+            </ol>
+        </article>
+    </section>
+
+    <section id="s3">
+        <h1>section</h1>
+        <article>
+            <ol>
+                <li>문서의 장(chapter,section) 혹은 졸을 구성하는 역형</li>
+                <li>일반 문서에 여라 장이 있듯이 웹 에이지에 여러 section 가능</li>
+                <li>제목 태그를 사용하여 절 혹은 섹션의 주제 기입</li>
+            </ol>
+        </article>
+    </section>
+
+    <section id="s4">
+        <h1>article</h1>
+        <article>
+            <ol>
+                <li>본묵과 연관 있지만 ,독립적인 콘텐츠를 담는 영역</li>
+                <li>혹은 보초 기사, 블로그 포스트 댓글 등 기타 독립적인 내용</li>
+                <li>article 에 담는 내요잉 많은 경우여러 section 에 둘 숬들다</li>
+            </ol>
+        </article>
+    </section>
+
+    <section id="s5">
+        <h1>Aside</h1>
+        <article>
+            <ol>
+                <li>본문에서 약간 벗어난 노트나 팀</li>
+                <li>신문,잡지에서 주요 기사 옆 관련 기사, 삽입 어구로 표시된</li>
+                <li>페이지의 오른쪽이나 왼쪽에 주로 배치</li>
+            </ol>
+        </article>
+    </section>
+
+    <section id="s6">
+        <h1>footer</h1>
+        <article>
+            <ol>
+                <li>꼬리말 영역 ,주로 저자나 처작권 정보 표시</li>
+            </ol>
+        </article>
+    </section>
+
+    <aside></aside>
+    
+    <footer>
+        &copy; 신라대학교 컴퓨터공학부 웹세착 주업 자료
+    </footer>
+
+    <style>
+        section
+        {
+            border: 2px solid tomato;
+            margin: 10px;
+            padding: 10px;
+            width: 40%;
+            height: 200px;
+            
+        }
+        aside,footer
+        {
+            clear: both;
+        }
+
+        #s2
+        {
+            box-sizing: border-box;
+        }
+        #s1,#s2
+        {
+            float: left;
+        }
+        #s3,#s4,#s5,#s6
+        {
+            clear: both;
+        }
+    </style>
+</body>
+</html>
