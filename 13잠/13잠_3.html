@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tarnsform 1 - 양사호</title>
+</head>
+<body>
+    <div class="origin">
+        <div class="rotate1">
+            <img src="images/fruit.jpg" alt="">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="rotate2">
+            <img src="images/fruit.jpg" alt="">
+        </div>
+    </div>
+
+    <style>
+        .origin{
+            width: 210px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 40px;
+            float: left;
+        }
+
+        .rotate1:hover{
+            -webkit-transform: rotate(20deg);
+            -ms-transform: rotate(20deg);
+            -moz-transform: rotate(20deg);
+            -o-transform: rotate(20deg);
+            transform: rotate(20deg);
+        }
+        .rotate2:hover{
+            -webkit-transform: rotate(-30deg);
+            -ms-transform:rotate(-30deg);
+            -moz-transform: rotate(-30deg);
+            -o-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+        }
+    </style>
+</body>
+</html>
