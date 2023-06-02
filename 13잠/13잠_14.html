@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tarnsform 1 - 양사호</title>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            margin: 40px;
+            float: left;
+        }
+        #box1{
+            background-color: aquamarine;
+            border: 1px solid black;
+            animation-name: shape;
+            animation-duration: 3s;
+        }
+        #box2{
+            background-color: aqua;
+            border: 1px solid black;
+            animation-name: rotate;
+            animation-duration: 3s;
+        }
+        @keyframes shape{
+            from{
+                border: 2px solid black ;
+            }
+            to{
+                border: 2px solid black;
+                border-radius: 50%;
+            }
+        }
+        @keyframes rotate{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(45deg);
+            }
+        }
+    </style>
+</body>
+</html>
